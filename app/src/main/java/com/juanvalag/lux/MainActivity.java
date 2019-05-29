@@ -53,13 +53,17 @@ public class MainActivity extends AppCompatActivity {
         SQLiteDatabase base = admin.getWritableDatabase();
      /*   Cursor fila = base.query("usuarios", *,
                 "username like '%" + this.nombreusuario+"%'", null, null, null, null);*/
-       Cursor fila = base.rawQuery("select contrasena from usuarios where username = '"+this.nombreusuario+"'", null);
+       Cursor fila = base.rawQuery("select contrasena, tipo from usuarios where username ='"+this.nombreusuario.trim()+"'", null);
         if(fila.moveToFirst())
         {
+
             if(fila.getString(0).equals(this.pass)){
-               String tipo= fila.getString(5);
+               String tipo= fila.getString(1);
                 base.close();
                 this.envio(tipo);
+            }else
+                {
+                Toast.makeText(this, "La contraseña no coincide con el usuario ingresado", Toast.LENGTH_SHORT).show();
             }
         }else
             {
