@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6B03DDFD"
+    tools:context=".Registro">
+
+    <Button
+        android:id="@+id/btn_iniciarsesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="64dp"
+        android:onClick="onClick"
+        android:text="@string/btn_Registrarse"
+        app:layout_constraintStart_toStartOf="@+id/txt_confircontra"
+        app:layout_constraintTop_toBottomOf="@+id/txt_confircontra" />
+
+    <EditText
+        android:id="@+id/txt_usuario"
+        android:layout_width="240dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/hint_usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txt_apellidos"
+        app:layout_constraintTop_toBottomOf="@+id/txt_apellidos" />
+
+    <EditText
+        android:id="@+id/txt_contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/hint_contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/txt_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/txt_usuario" />
+
+    <EditText
+        android:id="@+id/txt_confircontra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/hint_conficontra"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/txt_contrasena"
+        app:layout_constraintTop_toBottomOf="@+id/txt_contrasena" />
+
+    <EditText
+        android:id="@+id/txt_nombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/hint_nombres"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_apellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/hint_apellidos"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txt_nombres"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nombres" />
+
+</android.support.constraint.ConstraintLayout>

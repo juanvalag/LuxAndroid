@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lux</string>
+    <string name="hint_usuario">Ingrese el Nombre de Usuario</string>
+    <string name="hint_contraseña">Ingrese la Contraseña</string>
+    <string name="btn_ingresar">! Ingresar ¡</string>
+    <string name="btn_inisesion">Iniciar Sesión</string>
+    <string name="btn_acercade">Acerca de...</string>
+    <string name="hint_nombres">Ingrese los nombres</string>
+    <string name="hint_apellidos">Ingrese los Apellidos</string>
+    <string name="hint_conficontra">Confirme la contraseña</string>
+    <string name="btn_Registrarse">Registrarse</string>
+
+
+</resources>
